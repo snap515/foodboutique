@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/foodboutique/static/css/main.67e2c078.css",
+    "main.js": "/foodboutique/static/js/main.9f5e2ff7.js",
+    "index.html": "/foodboutique/index.html",
+    "main.67e2c078.css.map": "/foodboutique/static/css/main.67e2c078.css.map",
+    "main.9f5e2ff7.js.map": "/foodboutique/static/js/main.9f5e2ff7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67e2c078.css",
+    "static/js/main.9f5e2ff7.js"
+  ]
+}

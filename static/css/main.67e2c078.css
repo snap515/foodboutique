@@ -1,0 +1,2 @@
+:root{--mobMinContainer:320px;--mobMaxContainer:375px;--tabletContainer:768px;--desktopContainer:1440px}.container{margin:0 auto;max-width:375px;max-width:var(--mobMaxContainer);min-width:320px;min-width:var(--mobMinContainer);padding:0 20px}@media screen and (min-width:var(--tabletContainer )){.container{max-width:768px;max-width:var(--tabletContainer);padding:0 32px}}@media screen and (min-width:var(--desktopContainer )){.container{max-width:1440px;max-width:var(--desktopContainer);padding:0 100px}}
+/*# sourceMappingURL=main.67e2c078.css.map*/

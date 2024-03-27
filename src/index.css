@@ -12,14 +12,14 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: var(--tabletContainer)) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: var(--tabletContainer);
     padding: 0 32px;
   }
 }
 
-@media screen and (min-width: var(--desktopContainer)) {
+@media screen and (min-width: 1440px) {
   .container {
     max-width: var(--desktopContainer);
     padding: 0 100px;

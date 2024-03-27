@@ -2,11 +2,11 @@ export const Footer = () => {
   return (
     <footer>
       <div>
-        <a href="/">Food Boutique</a>
+        <a href="/foodboutique">Food Boutique</a>
         <ul>
-          <li><a href="/">Facebook</a></li>
-          <li><a href="/">Instagram</a></li>
-          <li><a href="/">Youtube</a></li>
+          <li><a href="/foodboutique">Facebook</a></li>
+          <li><a href="/foodboutique">Instagram</a></li>
+          <li><a href="/foodboutique">Youtube</a></li>
         </ul> 
       </div>
       <div>
@@ -26,9 +26,9 @@ export const Footer = () => {
         </li>
         <li>
           <p>
-            <a href="/">Privacy Policy</a>
+            <a href="/foodboutique">Privacy Policy</a>
             <span> / </span>
-            <a href="/">Terms of Service</a>
+            <a href="/foodboutique">Terms of Service</a>
           </p>
         </li>
       </ul>

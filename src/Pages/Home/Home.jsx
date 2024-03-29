@@ -1,12 +1,12 @@
-import { Hero, Filter, Pagination, PopularProducts, MainProducts, DiscountProducts } from "../../components/";
+import { Hero, Filter, Pagination, PopularProductsList, MainProductsList, DiscountProductsList } from "../../components/";
 function Home() {
   return (
     <>
       <Hero />
       <Filter />
-      <MainProducts />
-      <PopularProducts />
-      <DiscountProducts/>
+      <MainProductsList />
+      <PopularProductsList />
+      <DiscountProductsList/>
       <Pagination/>
     </>
   )

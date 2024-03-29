@@ -1,8 +1,25 @@
+/* @import-normalize; */
+
 :root {
   --mobMinContainer: 320px;
   --mobMaxContainer: 375px;
   --tabletContainer: 768px;
   --desktopContainer: 1440px;
+
+  --brand-color: #6D8434;
+  --brand-hover-color: #586F1F;
+  --social-hover: rgba(232, 232, 226, .2);
+  --contrast-color: #E8E8E2;
+  --black-color: #010101;
+
+  --animation-duration: 0.7s;
+}
+
+
+body {
+  font-family: 'Neue-Montreal', sans-serif;
+  font-weight: 400;
+  color: var(--black-color);
 }
 
 .container {
@@ -24,4 +41,20 @@
     max-width: var(--desktopContainer);
     padding: 0 100px;
   }
+}
+
+a {
+  text-decoration: none;
+}
+
+image {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+svg {
+  display: block;
 }

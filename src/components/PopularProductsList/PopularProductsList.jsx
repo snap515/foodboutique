@@ -1,4 +1,4 @@
-export function PopularProducts() {
+export function PopularProductsList() {
   return (
     <div>
       <ul>POPULAR PRODUCTS HERE</ul>

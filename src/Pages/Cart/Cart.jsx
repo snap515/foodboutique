@@ -1,7 +1,8 @@
+import { EmptyCart } from "../../components";
+
 function Cart() {
-  return (
-    <>
-    <p>CART HERE</p>
+  return (<>
+    <EmptyCart />
   </>)
 }
 

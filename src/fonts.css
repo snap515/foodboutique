@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Neue-Montreal';
+  src: url('./fonts/PPNeueMontreal-Medium.otf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Neue-Montreal';
+  src: url('./fonts/PPNeueMontreal-Book.otf');
+}
+
+@font-face {
+  font-family: 'Font-Spring';
+  src: url('./fonts/Fontspring-DEMO-quincycf-black.otf');
+}

@@ -3,6 +3,10 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
   padding-top: 18px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+  }
 `;
 
 export const LinkWrapper = styled.div`
@@ -21,6 +25,10 @@ export const Logo = styled.svg`
 
   transition: fill var(--animation-duration) ease,
     background-color var(--animation-duration) ease;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 4px;
+  }
 `;
 
 export const LogoText = styled.p`
@@ -31,6 +39,11 @@ export const LogoText = styled.p`
   color: var(--black-color);
 
   transition: color var(--animation-duration) ease;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1;
+  }
 `;
 
 export const LogoLink = styled(NavLink)`
@@ -40,8 +53,8 @@ export const LogoLink = styled(NavLink)`
 
   padding-top: 12px;
   padding-bottom: 13px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 15px;
+  padding-right: 21px;
 
   border-radius: 9px;
 
@@ -58,6 +71,13 @@ export const LogoLink = styled(NavLink)`
       background-color: var(--contrast-color);
     }
   }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 13px;
+    padding-bottom: 15px;
+    padding-left: 9px;
+    padding-right: 14px;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -73,12 +93,20 @@ export const HomeLink = styled(NavLink)`
   background-color: var(--brand-color);
   color: var(--contrast-color);
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
   transition: background-color var(--animation-duration) ease;
   &:hover {
     background-color: var(--brand-hover-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 12px 28px;
+    margin-right: 16px;
+
+    font-size: 18px;
+    line-height: 1.33;
   }
 `;
 
@@ -92,12 +120,24 @@ export const CartLink = styled(NavLink)`
   &:hover {
     background-color: var(--brand-hover-color);
   }
+
+  @media screen and (min-width: 768px) {
+    padding: 10px;
+    margin-right: 14px;
+  }
 `;
 
-export const IconContainer = styled.svg`
-  display: inline-flex;
-`;
-
-export const Cart = styled.svg`
+export const CartIcon = styled.svg`
   font-size: 9px;
+`;
+
+export const CartText = styled.p`
+  display: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 `;

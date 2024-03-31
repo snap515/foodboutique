@@ -1,5 +1,5 @@
 import { ReactComponent as Sprite } from '../../img/symbol-defs.svg'
-import { HeaderContainer, LogoText,HomeLink, CartLink, LogoLink, Logo,Nav, Cart, LinkWrapper} from "./Header.styled"
+import { HeaderContainer, LogoText,HomeLink, CartLink, LogoLink, Logo,Nav, CartIcon, LinkWrapper, CartText} from "./Header.styled"
 
 
 export const Header = () => {
@@ -25,10 +25,19 @@ export const Header = () => {
           <Nav>
             <HomeLink to='/'>Home</HomeLink>
             <CartLink to='/cart'>
-              <Cart width={14} height={14}>
-                <use xlinkHref="#icon-cart"/>
-              </Cart>
+              {isMobile ? 
+                <CartIcon width={14} height={14}>
+                  <use xlinkHref="#icon-cart"/>
+                </CartIcon>
+                :
+                <CartIcon width={18} height={18}>
+                  <use xlinkHref="#icon-cart"/>
+                </CartIcon>
+              }
             </CartLink>
+            <CartText>
+              Cart (0)
+            </CartText>
           </Nav>
         </LinkWrapper>
         

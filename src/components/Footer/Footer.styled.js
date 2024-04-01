@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const FooterContainer = styled.footer`
   padding-top: 40px;
@@ -8,57 +8,63 @@ export const FooterContainer = styled.footer`
   background-color: var(--brand-color);
 `;
 
+export const FooterContent = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  width: 100%;
+`;
+
 export const FooterLinksList = styled.div`
   display: inline-flex;
   flex-direction: column;
   justify-content: start;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 78px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-right: 149px;
+  }
 `;
 
 export const Logo = styled.svg`
   padding: 6px;
-  margin-right: 4px;
+  margin-right: 8px;
   border-radius: 30px;
 
   background-color: var(--contrast-color);
   fill: var(--brand-color);
 
-  transition: fill var(--animation-duration) ease,
+  transition:
+    fill var(--animation-duration) ease,
     background-color var(--animation-duration) ease;
 `;
 
 export const LogoText = styled.p`
   display: inline-block;
-  font-family: "Font-Spring", sans-serif;
+
+  font-family: 'Font-Spring', sans-serif;
   font-weight: 900;
   font-size: 18px;
   line-height: 1.11;
+  letter-spacing: -0.02em;
+
   color: var(--contrast-color);
 
-  transition: color var(--animation-duration) ease;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1;
+  }
 `;
 
 export const LogoLink = styled(NavLink)`
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  padding: 3px;
-
-  border-radius: 9px;
-
-  transition: background-color var(--animation-duration) ease;
-
-  &:hover {
-    background-color: var(--contrast-color);
-    & ${LogoText} {
-      color: var(--brand-color);
-    }
-
-    & ${Logo} {
-      fill: var(--contrast-color);
-      background-color: var(--brand-color);
-    }
-  }
 `;
 
 export const SocialLinksList = styled.ul`
@@ -93,13 +99,27 @@ export const SocialIcon = styled.svg`
 
 export const FooterMessageContainer = styled.div`
   padding-top: 40px;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    width: 429px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 410px;
+    padding: 0;
+  }
 `;
 
 export const FooterSlogan = styled.h2`
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
+  letter-spacing: -0.02em;
   color: var(--contrast-color);
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: 1.1;
+  }
 `;
 
 export const FooterText = styled.p`
@@ -107,14 +127,33 @@ export const FooterText = styled.p`
   font-size: 14px;
   line-height: 1.29;
   color: rgba(232, 232, 226, 0.7);
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+
+    font-size: 18px;
+    line-height: 1.33;
+  }
 `;
 
 //!FORM
 
 export const Form = styled.form`
-  display: inline-flex;
+  display: flex;
+  width: 100%;
   flex-direction: column;
   margin-top: 80px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 64px;
+    margin-left: 275px;
+    width: 336px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 0;
+    margin-left: 148px;
+  }
 `;
 
 export const FormLabel = styled.label`
@@ -122,10 +161,15 @@ export const FormLabel = styled.label`
   line-height: 1.29;
 
   color: var(--contrast-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.33;
+  }
 `;
 
 export const Input = styled.input`
-  width: 335px;
+  /* width: 335px; */
   margin-top: 20px;
   padding-left: 18px;
   padding-top: 12px;
@@ -136,14 +180,26 @@ export const Input = styled.input`
   outline: 2px solid var(--brand-color);
 
   background-color: var(--brand-color);
-  transition: outline var(--animation-duration) ease,
+  transition:
+    outline var(--animation-duration) ease,
     border var(--animation-duration) ease;
   &::placeholder {
     color: rgba(232, 232, 226, 0.6);
+
+    font-size: 14px;
+    line-height: 1.29;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1.5;
+    }
   }
   &:focus {
     border: 1px solid var(--contrast-color);
     outline: 2px solid var(--contrast-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    /* width: 336px; */
   }
 `;
 
@@ -154,19 +210,38 @@ export const Button = styled.button`
   border-radius: 30px;
   padding-top: 12px;
   padding-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
 `;
 
 export const ButtonText = styled.span`
-  font-family: "Neue-Montreal", sans-serif;
+  font-family: 'Neue-Montreal', sans-serif;
   font-weight: 500;
   line-height: 1.29;
   font-size: 14px;
 
   color: var(--black-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 `;
+
+//!POLICY
 
 export const PolicyContainer = styled.div`
   margin-top: 80px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+
+    width: 100%;
+  }
 `;
 
 export const PolicyText = styled.p`

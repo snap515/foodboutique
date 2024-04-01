@@ -3,5 +3,5 @@ export function DiscountProductsList() {
     <div>
       <ul>DISCOUNT PRODUCTS HERE</ul>
     </div>
-  )
+  );
 }

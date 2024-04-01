@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
   padding-top: 18px;
@@ -16,14 +16,15 @@ export const LinkWrapper = styled.div`
 `;
 
 export const Logo = styled.svg`
-  margin-right: 8px;
   padding: 6px;
+  margin-right: 8px;
 
   border-radius: 30px;
   background-color: var(--brand-color);
   fill: var(--contrast-color);
 
-  transition: fill var(--animation-duration) ease,
+  transition:
+    fill var(--animation-duration) ease,
     background-color var(--animation-duration) ease;
 
   @media screen and (min-width: 768px) {
@@ -32,10 +33,12 @@ export const Logo = styled.svg`
 `;
 
 export const LogoText = styled.p`
-  font-family: "Font-Spring", sans-serif;
+  font-family: 'Font-Spring', sans-serif;
   font-weight: 900;
   font-size: 18px;
   line-height: 1.11;
+  letter-spacing: -0.02em;
+
   color: var(--black-color);
 
   transition: color var(--animation-duration) ease;
@@ -110,25 +113,26 @@ export const HomeLink = styled(NavLink)`
   }
 `;
 
-export const CartLink = styled(NavLink)`
+export const CartIcon = styled.svg`
   padding: 12px;
   border-radius: 30px;
   background-color: var(--brand-color);
-  fill: var(--contrast-color);
 
   transition: background-color var(--animation-duration) ease;
-  &:hover {
-    background-color: var(--brand-hover-color);
-  }
-
   @media screen and (min-width: 768px) {
     padding: 10px;
     margin-right: 14px;
   }
 `;
 
-export const CartIcon = styled.svg`
-  font-size: 9px;
+export const CartLink = styled(NavLink)`
+  display: flex;
+  align-items: center;
+  fill: var(--contrast-color);
+
+  &:hover ${CartIcon} {
+    background-color: var(--brand-hover-color);
+  }
 `;
 
 export const CartText = styled.p`
@@ -136,6 +140,8 @@ export const CartText = styled.p`
   font-weight: 500;
   font-size: 18px;
   line-height: 1.33;
+
+  color: black;
 
   @media screen and (min-width: 768px) {
     display: block;

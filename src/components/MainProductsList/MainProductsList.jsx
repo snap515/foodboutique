@@ -6,6 +6,5 @@ export function MainProductsList() {
     <div>
       <ul>MAIN PRODUCTS HERE</ul>
     </div>
-  )
+  );
 }
- 

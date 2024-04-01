@@ -3,5 +3,5 @@ export function PopularProductsList() {
     <div>
       <ul>POPULAR PRODUCTS HERE</ul>
     </div>
-  )
+  );
 }

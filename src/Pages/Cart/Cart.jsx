@@ -1,9 +1,11 @@
-import { EmptyCart } from "../../components";
+import { EmptyCart } from '../../components';
 
 function Cart() {
-  return (<>
-    <EmptyCart />
-  </>)
+  return (
+    <>
+      <EmptyCart />
+    </>
+  );
 }
 
 export default Cart;

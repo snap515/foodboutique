@@ -1,7 +1,3 @@
 export function Pagination() {
-  return (
-    <div>
-      PAGINATION HERE
-    </div>
-  )
+  return <div>PAGINATION HERE</div>;
 }

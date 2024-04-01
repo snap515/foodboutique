@@ -1,9 +1,9 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from 'react-router-dom';
 // import "normalize.css";
-import "./App.css";
-import Home from "./Pages/Home/Home";
-import Cart from "./Pages/Cart/Cart";
-import { Layout } from "./components";
+import './App.css';
+import Home from './Pages/Home/Home';
+import Cart from './Pages/Cart/Cart';
+import { Layout } from './components';
 
 function App() {
   return (

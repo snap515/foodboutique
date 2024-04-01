@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/foodboutique/static/css/main.f6be295a.css",
-    "main.js": "/foodboutique/static/js/main.9b6b4eb0.js",
+    "main.css": "/foodboutique/static/css/main.f6e38148.css",
+    "main.js": "/foodboutique/static/js/main.85e5a461.js",
     "static/media/PPNeueMontreal-Medium.otf": "/foodboutique/static/media/PPNeueMontreal-Medium.b604bc34ed28cb1c20b3.otf",
     "static/media/PPNeueMontreal-Book.otf": "/foodboutique/static/media/PPNeueMontreal-Book.497a4d8a79ae3d85403f.otf",
-    "static/media/symbol-defs.svg": "/foodboutique/static/media/symbol-defs.f9eb5a18b66d511baa91638ac35d997d.svg",
+    "static/media/symbol-defs.svg": "/foodboutique/static/media/symbol-defs.78599e113665b7747a8ec97e9b279cf1.svg",
     "static/media/Fontspring-DEMO-quincycf-black.otf": "/foodboutique/static/media/Fontspring-DEMO-quincycf-black.f053a173ee2e6ffcc9cb.otf",
     "index.html": "/foodboutique/index.html",
-    "main.f6be295a.css.map": "/foodboutique/static/css/main.f6be295a.css.map",
-    "main.9b6b4eb0.js.map": "/foodboutique/static/js/main.9b6b4eb0.js.map"
+    "main.f6e38148.css.map": "/foodboutique/static/css/main.f6e38148.css.map",
+    "main.85e5a461.js.map": "/foodboutique/static/js/main.85e5a461.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6be295a.css",
-    "static/js/main.9b6b4eb0.js"
+    "static/css/main.f6e38148.css",
+    "static/js/main.85e5a461.js"
   ]
 }

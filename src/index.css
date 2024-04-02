@@ -24,6 +24,8 @@ body {
   font-family: 'Neue-Montreal', sans-serif;
   font-weight: 400;
   color: var(--black-color);
+
+  background-color: rgba(232, 232, 226, 1);
 }
 
 .container {

@@ -40,14 +40,14 @@ export const Header = () => {
                   <CartIcon width={14} height={14}>
                     <use xlinkHref="#icon-cart" />
                   </CartIcon>
-                  <CartText>Cart (0)</CartText>
+                  <CartText>CART (0)</CartText>
                 </>
               ) : (
                 <>
                   <CartIcon width={18} height={18}>
                     <use xlinkHref="#icon-cart" />
                   </CartIcon>
-                  <CartText>Cart (0)</CartText>
+                  <CartText>CART (0)</CartText>
                 </>
               )}
             </CartLink>

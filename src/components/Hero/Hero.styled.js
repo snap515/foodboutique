@@ -6,7 +6,7 @@ export const HeroContainer = styled.div`
     padding-top: 116px;
   }
   @media screen and (min-width: 1440px) {
-    padding-top: 149px;
+    padding-top: 77px;
   }
 `;
 

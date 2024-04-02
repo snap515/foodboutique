@@ -30,14 +30,17 @@ export const Hero = () => {
         <ImageWrapper>
           <picture>
             <source
-              media="(max-width: 767px)"
-              srcSet={`${heroMobile} 1x, ${heroMobile2x} 2x`}
+              media="(min-width: 1440px)"
+              srcSet={`${heroDesktop} 1x, ${heroDesktop2x} 2x`}
             />
             <source
-              media="(max-width: 1439px)"
+              media="(min-width: 768px)"
               srcSet={`${heroTablet} 1x, ${heroTablet2x} 2x`}
             />
-            <source srcSet={`${heroDesktop} 1x, ${heroDesktop2x} 2x`} />
+            <source
+              media="(min-width: 320px)"
+              srcSet={`${heroMobile} 1x, ${heroMobile2x} 2x`}
+            />
             <img src={heroDesktop} alt="box with vegetables" loading="lazy" />
           </picture>
           <OrganicIcon width={100} height={100}>

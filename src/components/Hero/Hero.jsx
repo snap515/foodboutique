@@ -1,10 +1,10 @@
 import {
   HeroContainer,
-  HeroImage,
   HeroSlogan,
   HeroText,
   SloganColoured,
   OrganicIcon,
+  ImageWrapper,
 } from './Hero.styled';
 
 import {
@@ -27,24 +27,8 @@ export const Hero = () => {
           With Food Boutique, you're not just subscribing to food, you're
           signing up for a fresher, fitter, and happier you.
         </HeroText>
-        <div>
-          {/* <HeroImage
-            srcSet={`
-              ${heroMobile} 335w,
-              ${heroMobile2x} 670w, 
-              ${heroTablet} 704w,
-              ${heroTablet2x} 1408w,
-              ${heroDesktop} 1240w,
-              ${heroDesktop2x} 2480w
-              `}
-            sizes="
-              (max-width: 767px) 335px,
-              (max-width: 1439px) 704px,
-              1240px"
-            src={heroDesktop}
-            alt="box with vegetables"
-          /> */}
-          <HeroImage>
+        <ImageWrapper>
+          <picture>
             <source
               media="(max-width: 767px)"
               srcSet={`${heroMobile} 1x, ${heroMobile2x} 2x`}
@@ -54,34 +38,13 @@ export const Hero = () => {
               srcSet={`${heroTablet} 1x, ${heroTablet2x} 2x`}
             />
             <source srcSet={`${heroDesktop} 1x, ${heroDesktop2x} 2x`} />
-            <img src={heroDesktop} alt="box with vegetables" />
-          </HeroImage>
+            <img src={heroDesktop} alt="box with vegetables" loading="lazy" />
+          </picture>
           <OrganicIcon width={100} height={100}>
             <use xlinkHref="#icon-organic-food"></use>
           </OrganicIcon>
-        </div>
+        </ImageWrapper>
       </div>
     </HeroContainer>
   );
 };
-// srcSet={`
-//   ${heroMobile} 335w,
-//   ${heroMobile2x} 670w,
-//   ${heroTablet} 704w,
-//   ${heroTablet2x} 1408w,
-//   ${heroDesktop} 1240w,
-//   ${heroDesktop2x} 2480w
-//   `}
-
-// <HeroImage>
-//   <source
-//     media="(max-width: 767px)"
-//     srcSet={`${heroMobile} 1x, ${heroMobile2x} 2x`}
-//   />
-//   <source
-//     media="(max-width: 1439px)"
-//     srcSet={`${heroTablet} 1x, ${heroTablet2x} 2x`}
-//   />
-//   <source srcSet={`${heroDesktop} 1x, ${heroDesktop2x} 2x`} />
-//   <img src={heroDesktop} alt="box with vegetables" />
-// </HeroImage>;

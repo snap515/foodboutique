@@ -1,17 +1,27 @@
 {
   "files": {
-    "main.css": "/foodboutique/static/css/main.f6e38148.css",
-    "main.js": "/foodboutique/static/js/main.85e5a461.js",
+    "main.css": "/foodboutique/static/css/main.15ac33d0.css",
+    "main.js": "/foodboutique/static/js/main.7c791e8a.js",
+    "static/media/hero-desktop-2x.png": "/foodboutique/static/media/hero-desktop-2x.d0b3b6f526fe8ec4855b.png",
+    "static/media/hero-tablet-2x.png": "/foodboutique/static/media/hero-tablet-2x.334845bebf9921c86861.png",
+    "static/media/hero-mobile-2x.png": "/foodboutique/static/media/hero-mobile-2x.240d56ea7f559d01a548.png",
+    "static/media/hero-desktop.png": "/foodboutique/static/media/hero-desktop.91c83f17514e20868a64.png",
+    "static/media/hero-tablet.png": "/foodboutique/static/media/hero-tablet.21f0eb1cd931b0630e9e.png",
+    "static/media/hero-mobile.png": "/foodboutique/static/media/hero-mobile.2a4cd2021278163b170b.png",
     "static/media/PPNeueMontreal-Medium.otf": "/foodboutique/static/media/PPNeueMontreal-Medium.b604bc34ed28cb1c20b3.otf",
     "static/media/PPNeueMontreal-Book.otf": "/foodboutique/static/media/PPNeueMontreal-Book.497a4d8a79ae3d85403f.otf",
+    "static/media/cart-2x.png": "/foodboutique/static/media/cart-2x.617171fceadad9872edb.png",
+    "static/media/cart-mobile-2x.png": "/foodboutique/static/media/cart-mobile-2x.6a97c1d4f0373b6efe62.png",
     "static/media/symbol-defs.svg": "/foodboutique/static/media/symbol-defs.78599e113665b7747a8ec97e9b279cf1.svg",
+    "static/media/cart.png": "/foodboutique/static/media/cart.9950b9d446f566200c52.png",
     "static/media/Fontspring-DEMO-quincycf-black.otf": "/foodboutique/static/media/Fontspring-DEMO-quincycf-black.f053a173ee2e6ffcc9cb.otf",
+    "static/media/cart-mobile.png": "/foodboutique/static/media/cart-mobile.a2173e9f158b24e91977.png",
     "index.html": "/foodboutique/index.html",
-    "main.f6e38148.css.map": "/foodboutique/static/css/main.f6e38148.css.map",
-    "main.85e5a461.js.map": "/foodboutique/static/js/main.85e5a461.js.map"
+    "main.15ac33d0.css.map": "/foodboutique/static/css/main.15ac33d0.css.map",
+    "main.7c791e8a.js.map": "/foodboutique/static/js/main.7c791e8a.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6e38148.css",
-    "static/js/main.85e5a461.js"
+    "static/css/main.15ac33d0.css",
+    "static/js/main.7c791e8a.js"
   ]
 }

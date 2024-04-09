@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import { media } from 'constants/constants';
 
 export const FooterContainer = styled.footer`
   padding-top: 40px;
@@ -22,11 +23,11 @@ export const FooterLinksList = styled.div`
   flex-direction: column;
   justify-content: start;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     margin-right: 78px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: ${media.desktop}) {
     margin-right: 149px;
   }
 `;
@@ -55,7 +56,7 @@ export const LogoText = styled.p`
 
   color: var(--contrast-color);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     font-size: 24px;
     line-height: 1;
   }
@@ -99,12 +100,12 @@ export const SocialIcon = styled.svg`
 
 export const FooterMessageContainer = styled.div`
   padding-top: 40px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     padding: 0;
     width: 429px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: ${media.desktop}) {
     width: 410px;
     padding: 0;
   }
@@ -116,7 +117,7 @@ export const FooterSlogan = styled.h2`
   line-height: 1.17;
   letter-spacing: -0.02em;
   color: var(--contrast-color);
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     font-size: 40px;
     line-height: 1.1;
   }
@@ -128,7 +129,7 @@ export const FooterText = styled.p`
   line-height: 1.29;
   color: rgba(232, 232, 226, 0.7);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     margin-top: 20px;
 
     font-size: 18px;
@@ -144,13 +145,13 @@ export const Form = styled.form`
   flex-direction: column;
   margin-top: 80px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     margin-top: 64px;
     margin-left: 275px;
     width: 336px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: ${media.desktop}) {
     margin-top: 0;
     margin-left: 148px;
   }
@@ -162,7 +163,7 @@ export const FormLabel = styled.label`
 
   color: var(--contrast-color);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     font-size: 18px;
     line-height: 1.33;
   }
@@ -188,7 +189,7 @@ export const Input = styled.input`
 
     font-size: 14px;
     line-height: 1.29;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: ${media.tablet}) {
       font-size: 16px;
       line-height: 1.5;
     }
@@ -198,7 +199,7 @@ export const Input = styled.input`
     outline: 2px solid var(--contrast-color);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     /* width: 336px; */
   }
 `;
@@ -211,7 +212,7 @@ export const Button = styled.button`
   padding-top: 12px;
   padding-bottom: 12px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     margin-top: 20px;
   }
 `;
@@ -224,7 +225,7 @@ export const ButtonText = styled.span`
 
   color: var(--black-color);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     font-size: 16px;
     line-height: 1.5;
   }
@@ -235,7 +236,7 @@ export const ButtonText = styled.span`
 export const PolicyContainer = styled.div`
   margin-top: 80px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     display: flex;
     justify-content: space-between;
     margin-top: 120px;

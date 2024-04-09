@@ -1,10 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import { media } from 'constants/constants';
 
 export const HeaderContainer = styled.header`
   padding-top: 18px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     padding-top: 24px;
   }
 `;
@@ -27,7 +28,7 @@ export const Logo = styled.svg`
     fill var(--animation-duration) ease,
     background-color var(--animation-duration) ease;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     margin-right: 4px;
   }
 `;
@@ -43,7 +44,7 @@ export const LogoText = styled.p`
 
   transition: color var(--animation-duration) ease;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     font-size: 24px;
     line-height: 1;
   }
@@ -75,7 +76,7 @@ export const LogoLink = styled(NavLink)`
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     padding-top: 13px;
     padding-bottom: 15px;
     padding-left: 9px;
@@ -104,7 +105,7 @@ export const HomeLink = styled(NavLink)`
     background-color: var(--brand-hover-color);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     padding: 12px 28px;
     margin-right: 16px;
 
@@ -119,7 +120,7 @@ export const CartIcon = styled.svg`
   background-color: var(--brand-color);
 
   transition: background-color var(--animation-duration) ease;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     padding: 10px;
     margin-right: 14px;
   }
@@ -143,7 +144,7 @@ export const CartText = styled.p`
 
   color: black;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     display: block;
   }
 `;

@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import { media } from 'constants/constants';
 
 export const HeroContainer = styled.div`
   padding-top: 72px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     padding-top: 116px;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: ${media.desktop}) {
     padding-top: 77px;
   }
 `;
@@ -19,11 +20,11 @@ export const HeroSlogan = styled.h1`
 
   color: black;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     font-size: 80px;
     line-height: 1;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: ${media.desktop}) {
   }
 `;
 
@@ -35,7 +36,7 @@ export const SloganColoured = styled.span`
 
   color: var(--brand-color);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     font-size: 80px;
     line-height: 1;
   }
@@ -53,7 +54,7 @@ export const HeroText = styled.p`
   font-size: 14px;
   line-height: 1.29;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     max-width: 492px;
     margin-top: 20px;
 
@@ -66,7 +67,7 @@ export const ImageWrapper = styled.div`
   position: relative;
 
   margin-top: 32px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     margin-top: 40px;
   }
 `;
@@ -75,11 +76,11 @@ export const OrganicIcon = styled.svg`
   right: 8px;
   top: -7px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${media.tablet}) {
     right: 10px;
     top: -30px;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: ${media.desktop}) {
     right: 20px;
     top: -50px;
   }

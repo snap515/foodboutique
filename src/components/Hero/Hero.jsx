@@ -14,7 +14,7 @@ import {
   heroMobile,
   heroTablet,
   heroTablet2x,
-} from '../../img/images';
+} from 'img/images';
 
 export const Hero = () => {
   return (
